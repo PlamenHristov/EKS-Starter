@@ -1,0 +1,68 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: service-map
+  labels:
+    env: eu-test
+data:
+  access-service: https://access-test.ft.com
+  acc-licence-svc: http://acc-licence-svc:8080
+  user-cred-svc: https://user-cred-svc-test.memb.ft.com
+  user-api: https://user-api-test.memb.ft.com
+  user-api-host: user-api-test.memb.ft.com:8443
+  user-profile-svc: http://user-profile-svc:8080
+  usr-product-svc: http://usr-product-svc:8080
+  user-subs-status: http://user-subs-status:8080
+  subscription-api: https://subscription-api-lb-eu-west-1-test.memb.ft.com
+  acq-context-svc: http://acq-context-svc:8080
+  api-auth-svc: http://api-authz-svc:8080/api # TODO deprecate and kill
+  api-auth-svc.v2: http://api-authz-svc:8080
+  auth-svc: https://api-t.ft.com # TODO deprecate and kill
+  gocardless: https://api-sandbox.gocardless.com
+  invoice-svc: http://invoice-svc:8080
+  subs-transition-svc: http://subs-transition-svc:8080
+  offer-api: http://offer-api:8080
+  redeem-svc: http://redeem-token-svc:8080
+  session-api: https://session-api-test.memb.ft.com
+  swg-fulfilment-svc: http://swg-fulfilment-svc:8080
+  swg-google-auth-svc: http://swg-google-auth-svc:8080
+  swg-sync-svc: http://swg-sync-svc:8080
+  corp-svc-alerts: http://markets.ft.com
+  eme-api: https://email-webservices.ft.com
+  zuora-rest: https://rest.apisandbox.zuora.com
+  sign-up-url: https://join-test.ft.com/
+  api-gateway-url: https://api-t.ft.com
+  memb-graphql-api: https://memb-graphql-api-eu-test.memb.ft.com
+  sf-app-url: https://financialtimes--test.cs8.my.salesforce.com/
+  sf-auth-url: https://test.salesforce.com/services/oauth2/token/
+  redis: redis.default.svc.cluster.local
+  wraptcha: http://wraptcha:8080
+  sso-internal: https://sso-internal-gw-eu-west-1-test.memb.ft.com
+  secure-login-api: http://secure-login-api:8080
+  amp-access: https://amp-access-svc-test.memb.ft.com
+  cookie-svc: https://cookie-svc-test.memb.ft.com
+  membership-gdrive-svc: http://membership-gdrive-svc:8080
+  aim-totp-svc: http://aim-totp-svc:8080
+  b2c-fulfil-svc: http://b2c-fulfil-svc:8080
+  zuora-fulfil-svc: http://zuora-fulfil-svc:8080
+  mfa-login-api: http://mfa-login-api:8080
+  login-history-svc: http://login-history-svc:8080
+  membership-api: https://api-t.ft.com
+  login-api: https://login-api-gw-eu-west-1-test.memb.ft.com
+  newspaper-delivery-address-svc: https://newspaper-delivery-address-svc-gw-eu-west-1-test.memb.ft.com
+  newspaper-fulfilment-options-svc: http://newspaper-fulfilment-options-svc:8080
+  newspaper-suspensions-svc: https://newspaper-suspensions-svc-gw-eu-west-1-test.memb.ft.com
+  newspaper-info-svc: http://newspaper-info-svc:8080
+  newspaper-complaints-svc: http://newspaper-complaints-svc:8080
+  user-cred-svc-v2: http://user-cred-svc:8080
+  crm_api_url: https://ip-subscrm-api-test.herokuapp.com
+  consent-api: http://consent-api:8080
+  b2c-admin-app: http://b2c-admin-app:8080
+  digital-voucher-svc: http://digital-voucher-svc:8080
+  social-login-svc: http://social-login-svc:8080
+  customer-sso: http://customer-sso:8080
+  stepup-svc: http://stepup-svc:8080
+  zuora-payment-method-svc: http://zuora-payment-method-svc:8080
+  gift-article-svc: http://gift-article-svc:8080
+  cont-acc-tkn-svc: https://cont-acc-tkn-svc-gw-eu-west-1-test.memb.ft.com
+  consent-observer: http://consent-observer-eu-west-1-test.memb.ft.com

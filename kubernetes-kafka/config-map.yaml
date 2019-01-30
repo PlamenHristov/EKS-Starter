@@ -1,0 +1,15 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: kafka
+  labels:
+    env: us-test
+data:
+  brokerListArray.java: "['bootstrap.kafka.svc.cluster.local:9092']"
+  brokerListArray.nodejs: "bootstrap.kafka.svc.cluster.local:9092"
+  brokerListArray.go: "bootstrap.kafka.svc.cluster.local:9092"
+  zookeeperBrokerListArray.java: "['zookeeper.default.svc.cluster.local:2181']"
+  zookeeperBrokerListArray.nodejs: "zookeeper.default.svc.cluster.local"
+  brokers-env.node: "test"
+
+  remote.zookeeperBrokerListArray.java: "['zookeeper.default.svc.cluster.local:2181']"

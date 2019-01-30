@@ -1,0 +1,13 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: cassandra
+  labels:
+    env: eu-test
+data:
+  cluster.name: CassandraCluster
+  local.dc: use1
+  protocol.version: "3"
+  hosts.nodejs: "cassandra-0.cassandra.default.svc.cluster.local"
+  hosts.java: "['cassandra-0.cassandra.default.svc.cluster.local']"
+  
